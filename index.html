@@ -1,12 +1,341 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
- </head>
- <body>
-     <h1>my portfolio</h1>
- </body>
- </html>
+    <title>Ashish Ranjan personal portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f26e1c47f5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        
+        <div class="container">
+            <nav>
+                <!-- <img src="image/logoashish.jpg" alt="" class="logo"> -->
+                <h3>Ashish</h3>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Myskills">My skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <!-- <span id="auto-type"></span> -->
+                <h1>I'm <span id="auto-type"></span></h1>
+                <p>You can reach out to me if you need any help in making a <br> website for you or your business</p>
+                <!-- <a href="#contact"><button>Contact Me</button></a> -->
+                <!-- <a href="image/Ashish_Ranjan_Resume (2).pdf" download class="btn btn2">Download CV</a> -->
+
+
+
+            </div>
+        </div>
+    </div>
+    <!---------------------------------About----------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/phone.png.jpg"  >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                     <p style ="line-height: 25px ; font-size:19px;">Aspiring Frontend and Backend Developer , With
+                        a passion to learn and work with new
+                        technologies that make a positive
+                        impact on my carrier. Extremely proficient in
+                        javascript and java performance. Dedicated to
+                        learning a better way to write clean
+                        and efficient code while keeping up with the
+                        newest tech stacks searching for my java backend
+                        developer role that will livereage
+                        my experties in creativity, Analytics and problem
+                        solving while providing opportunities to grow
+                        and enhance my technical abilities
+
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        
+                    </div>
+                     <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>JavaScript</li>
+                            <li>Java</li>
+                            <li>MySql</li>
+                            <li>Html</li>
+                            <li>Css</li>
+                            <li>Dom</li>
+                            <li>Github</li>
+                            <li>Spring</li>
+                            <li>VS-Code</li>
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span> <h2>Internship</h2></span></li>
+                            <!-- Masai School<br>Full Stack Web Development <br>Java Backend Developer -->
+
+                            <!-- <li><span>Backend Developer</span><br>Designing Web/Backend interfaces</li>
+                            <li><span>Backend Developer</span><br>Designing Web/Backend interfaces</li>
+                            <li><span>Backend Developer</span><br>Designing Web/Backend interfaces</li> -->
+                            <li>Masai School, Feb 2022 -present</li>
+                            <li>Full Stack Web Developer,</li>
+                            <li>Java Backend Developer</li>
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span><h2>Bachelor of Technology</h2></span><br> <h5>Shershah College Of Engineering </h5><br>Civil Engineering ( 2017 - 2021)</li>
+                            <li><span><h2>Intermediate</h2></span><br><h5>Janta Inter College,BSEB</h5><br>Mathematic (2015 -2017)</li>
+                            <!-- <li><span> <h2>Matriculation</h2></span><br><h5>Vivekanand Mission School,CBSE (2013 -2015)</h5></li> -->
+                            
+                        </ul>
+                     </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+     
+     <!-- ---------------------------language and tools------------- -->
+     <!-- <h1 align="left" class="sub-title">Languages and Tools:</h1>
+     <div class="">
+         <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="100" height="100"/> </a>
+          <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="100" height="100"/> </a> 
+          <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="100" height="100"/> </a>
+           <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="100" height="100"/> </a> 
+           <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="100" height="100"/> </a>
+        <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="100" height="100"/> </a>
+        <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://www.elegantthemes.com/blog/wp-content/uploads/2019/01/000-VS-Code.png" alt="react" width="100" height="100"/> </a>  
+     </div>
+     <div > -->
+
+     <!-- !----------------------skills-------------! -->
+      <div id="Myskills">
+     <h1 class="sub-title">My Skills</h1>
+     <div class="tech-container">
+        <!-- skill Item Start -->
+        <div class="tech-item">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="" />
+        </div>
+        <!-- skill Item End -->
+
+        <!-- skill Item Start -->
+        <div class="tech-item">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="" />
+        </div>
+        <!-- skill Item End -->
+
+        <!-- skill Item Start -->
+        <div class="tech-item">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java"    />
+        </div>
+        <!-- skill Item End -->
+
+        <!-- skill Item Start -->
+        <div class="tech-item">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="" />
+        </div>
+        <!-- skill Item End -->
+
+        <!-- skill Item Start -->
+        <div class="tech-item">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="" />
+        </div>
+        <!-- skill Item End -->
+
+        <!-- skill Item Start -->
+        <div class="tech-item">
+          <img src="https://www.elegantthemes.com/blog/wp-content/uploads/2019/01/000-VS-Code.png" alt="vs code" />
+        </div>
+        <!-- skill Item End -->
+        <!-- skill Item Start -->
+        <div class="tech-item">
+          <img src="https://git-scm.com/images/logos/logomark-orange@2x.png" alt="" />
+        </div>
+        <!-- skill Item End -->
+        <!-- skill Item Start -->
+        <div class="tech-item">
+          <img src="https://1.bp.blogspot.com/--8qgtWK15rE/V2Ij9pPufbI/AAAAAAAAJsw/1iwzcuKIvIcALAvztITv1BBHHqyvv3D1QCK4B/s320/IJ.png" alt="" />
+        </div>
+        <!-- skill Item End -->
+        <!-- skill Item Start -->
+        <div class="tech-item">
+          <img src="https://www.logolynx.com/images/logolynx/98/980c5fe716efb66c936eebe1937d5489.png" alt="" />
+        </div>
+        <!-- skill Item End -->
+        <!-- skill Item Start -->
+        <!-- <div class="tech-item">
+          <img src="images/skills/heroku.png" alt="" />
+        </div> -->
+        <!-- skill Item End -->
+      </div>
+
+     <!-- !----------------------skills-------------! -->
+     <h1 class="sub-title">Git Status</h1>
+     <div id="git"> 
+     <p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=ashishbadpisay&show_icons=true&locale=en&layout=compact" alt="ashishbadpisay" /></p>
+     
+     <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=ashishbadpisay&show_icons=true&locale=en" alt="ashishbadpisay" /></p>
+     
+     <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=ashishbadpisay&" alt="ashishbadpisay" /></p>
+     </div>
+     </div>
+    <!-- Git Contribution Start --> 
+    <h2 class="calender-title" style="text-align: center"> Github Calendar </h2> 
+    <!-- Git Calendar --> 
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script> 
+    <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) --> 
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+     <!-- Prepare a container for your calendar. --> 
+     <div class="calendar"></div>
+    <script> GitHubCalendar(".calendar", "ashishbadpisay");
+       // or enable responsive functionality GitHubCalendar(".calendar", "gopalkrushnas063", { responsive: true, }); 
+    </script>
+    
+   </div> 
+    <!-- Git Calendar -->
+    
+
+
+
+     <!-- ---------------------------language and tools------------- -->
+
+     <!----------------------------portfolio--------------------------------------->
+     
+       <div id="portfolio">
+             <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="image/zee5 cover image.png">
+                        <div class="layer">
+                            <h3>Zee5 clone</h3>
+                            <p>ZEE5 is an Indian subscription video on-demand and over-the-top streaming service, run by Zee Entertainment Enterprises. It was launched in India on 14 February 2018 with content in 12 languages.[3] The ZEE5 mobile app is available on Web, Android, iOS, Smart TVs, among other devices. </p>
+                                 <a href="https://animated-hamster-17ea35.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="image/anthropologie.png">
+                        <div class="layer">
+                            <h3>Anthropologie clone</h3>
+                            <p>Anthropologie is an American clothing retailer with approximately 200 stores across the U.S., Canada, and the UK that offers an assortment of clothing, jewelry, home furniture, decoration, beauty products, and gifts.[3] </p>
+                                 <a href="https://phenomenal-hotteok-9809eb.netlify.app"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="image/outlook.png" >
+                        <div class="layer">
+                            <h3><div class="layer">
+                                <h3>Outlook Newspaper clone</h3>
+                            <p>Outlook is a weekly general interest English and Hindi news magazine published in India. </p>
+                                 <a href="https://bucolic-strudel-47957a.netlify.app"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+             </div>
+             <a href="H" class="btn">See more</a>
+       </div>
+     <!-- -----------------------contact----------------------------------------------->
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>ashisrnj824113@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>9413679108</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100007242392954"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/Er_ranjan76?s=08"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/aforashishranjan/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/arnj76/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Ashishbadpisay"><i class="fa-brands fa-github"></i></a>
+
+                    </div>
+                    <a href="image/Ashish_Ranjan.pdf" download class="btn btn2">Download CV</a>
+                   
+                </div>
+                <div class="contact-right">
+                     <form name="submit-to-google-sheet">
+                        <input type="text" name ="Name" placeholder="Your Name" required>
+                        <input type="email", name="email" placeholder="Your Email" required>
+                        <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                     </form>
+                     <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="cpyright">
+            <p> copyright © Ashish. Made with <i class="fa-sharp fa-solid fa-heart"></i> by Ashish ranjan </p>
+        </div>
+     </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        // opentab()
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right= "0";
+        }
+        function closemenu(){
+            sidemenu.style.right= "-200px";
+        }
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwATf5MPKBSuy8HdGNRQE69aOV0HWYwUGkUlhM9anRlIysXwsIWV9LLhJ9hdzd19OKkJA/exec'
+       const form = document.forms['submit-to-google-sheet']
+       const msg = document.getElementById("msg");
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML="Message Sent sucessfully";
+        setTimeout(function(){
+            msg.innerHTML ="";
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var type = new Typed("#auto-type",{
+            strings:["Java Developer","Ashish Ranjan"],
+            typeSpeed:100,
+            backSpeed:100,
+            loop:true
+        })
+    </script>
+</body>
+</html>
